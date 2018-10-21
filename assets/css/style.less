@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: Roboto;
+}
+
 .bg-white {
     background: white;
 }
@@ -33,6 +38,9 @@
     display: none;
 }
 
+.navbar-nav {
+    overflow: hidden;
+}
 .nav-item {
     background: gray;
     a {
@@ -42,8 +50,30 @@
         background: black;
     }
     .nav-link {
+        padding: 10px !important;
+        transition: all 0.2s ease-in-out;
         &.active {
             background: black;
+        }
+        &:hover {
+            transform: scale(1.1);
+
+            @media (max-width: 992px) {
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+#about-us {
+    .row {
+        align-items: center;
+        .description {
+            letter-spacing: 1px;
+            text-align: justify;
+            .highlight {
+                color: #21ffe0;
+            }
         }
     }
 }
