@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+  font-family: Roboto;
+}
 .bg-white {
   background: white;
 }
@@ -25,6 +29,9 @@
 .no-display {
   display: none;
 }
+.navbar-nav {
+  overflow: hidden;
+}
 .nav-item {
   background: gray;
 }
@@ -34,8 +41,30 @@
 .nav-item:hover {
   background: black;
 }
+.nav-item .nav-link {
+  padding: 10px !important;
+  transition: all 0.2s ease-in-out;
+}
 .nav-item .nav-link.active {
   background: black;
+}
+.nav-item .nav-link:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 992px) {
+  .nav-item .nav-link:hover {
+    margin-left: 25px;
+  }
+}
+#about-us .row {
+  align-items: center;
+}
+#about-us .row .description {
+  letter-spacing: 1px;
+  text-align: justify;
+}
+#about-us .row .description .highlight {
+  color: #21ffe0;
 }
 #expertise .row img {
   opacity: 0.5;
